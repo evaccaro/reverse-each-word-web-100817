@@ -4,5 +4,5 @@ def reverse_each_word(str)
   to_array.each do |word|
     answer += "#{word.reverse} "
   end
-  answer
+  answer.slice(0, -1)
 end
