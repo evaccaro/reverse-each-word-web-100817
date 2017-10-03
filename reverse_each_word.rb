@@ -9,8 +9,7 @@
 
 def reverse_each_word(str)
   to_array = str.split(" ")
-  to_array.collect do |word|
-    "#{word.reverse} "
+  to_array.collect {|word| "#{word.reverse} "}
   end
   answer.chomp(" ")
 end
